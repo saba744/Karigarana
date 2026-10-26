@@ -1,0 +1,251 @@
+
+.gift-page {
+  width: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+/* Banner */
+.gift-banner {
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+}
+
+.gift-banner img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+/* Text below banner */
+.gift-intro {
+  text-align: center;
+  padding: 50px 20px 60px;
+  background: #fff;
+}
+
+.gift-intro h1 {
+  font-size: 34px;
+  font-weight: 500;
+  color: #2b4f60;
+  margin-bottom: 12px;
+}
+
+.gift-intro p {
+  font-size: 16px;
+  color: #6b6b6b;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto;
+}
+/* GIFT PRODUCT SECTION */
+.gift-product-section {
+  padding: 60px 80px;
+}
+
+.gift-product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px;
+}
+
+.gift-card {
+  text-align: center;
+}
+
+.gift-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.gift-card p {
+  margin-top: 14px;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.4;
+}
+.gift-product-section {
+  padding: 40px 80px;
+}
+
+.gift-product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.gift-card {
+  text-align: center;
+}
+
+/* FEATURED GIFT SECTION */
+.featured-gift-section {
+  display: grid;
+  grid-template-columns: 1.2fr 2.8fr;
+  gap: 28px;
+  padding: 60px 80px;
+}
+
+/* LEFT IMAGE */
+.featured-left {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.featured-left img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.featured-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.featured-overlay h2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.featured-overlay p {
+  font-size: 15px;
+  margin: 10px 0 18px;
+}
+
+.featured-overlay button {
+  width: fit-content;
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* RIGHT PRODUCTS – ONE ROW 4 IMAGES */
+.featured-right {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.featured-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.featured-title {
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0 6px;
+  line-height: 1.4;
+}
+
+/* Rating */
+.rating {
+  color: #d9a441;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Price */
+.price {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.price .new {
+  font-weight: 600;
+  color: #000;
+}
+
+.price .old {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 13px;
+}
+
+.price .offer {
+  color: #e53935;
+  font-size: 13px;
+}
+/* CORPORATE GIFTS SECTION */
+.corporate-section {
+  padding: 80px 100px;
+  background: #fff;
+}
+
+.corporate-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+/* LEFT IMAGE WITH TOP ROUND */
+.corporate-image {
+  width: 45%;
+  height: 520px;
+  overflow: hidden;
+  border-top-left-radius: 260px;
+  border-top-right-radius: 260px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.corporate-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RIGHT CONTENT */
+.corporate-content {
+  width: 55%;
+}
+
+.corporate-content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #2b4f60;
+  margin-bottom: 18px;
+}
+
+.corporate-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #6b6b6b;
+  max-width: 520px;
+  margin-bottom: 28px;
+}
+
+/* BUTTON */
+.corporate-btn {
+  padding: 12px 34px;
+  border: 1px solid #d9a441;
+  background: transparent;
+  color: #d9a441;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.corporate-btn:hover {
+  background: #d9a441;
+  color: #fff;
+}

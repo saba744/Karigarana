@@ -1,0 +1,89 @@
+
+/* Container */
+.favlist-container {
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  min-height: 100vh;
+}
+
+/* Title */
+.favlist-title {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #05254d;       
+  font-style: italic;  
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+/* Grid Layout */
+.favlist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card */
+.favlist-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+  width: 250px;   
+  height: 300px;          /* compact width */
+  text-align: center;
+}
+
+.favlist-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image */
+.favlist-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Product Name */
+.favlist-name {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+/* Price */
+.favlist-price {
+  font-size: 1rem;
+  color: #e63946;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Button */
+.favlist-btn {
+  background: #0077ff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.favlist-btn:hover {
+  background: #005fcc;
+}
+
+/* Empty Wishlist */
+.favlist-empty {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 30px;
+}

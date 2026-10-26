@@ -1,0 +1,368 @@
+.checkout-page {
+  width: 100%;
+}
+
+/* ===== HEADER ===== */
+.checkout-header-top {
+  text-align: center;
+  background: #fff;
+}
+
+.checkout-brand-logo {
+  margin: 12px 0 6px;
+  font-family: serif;
+  margin-bottom: 18px;
+}
+
+.checkout-brand-logo .peepul {
+  color: #7a5a2b;
+  font-weight: 600;
+}
+
+/* ===== MARQUEE ===== */
+.checkout-top-marquee {
+  background: #3f5f3b;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.checkout-marquee-track {
+  display: inline-block;
+  padding-left: 100%;
+  animation: checkout-marquee 18s linear infinite;
+}
+
+.checkout-gap {
+  margin: 0 18px;
+}
+
+@keyframes checkout-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ===== LAYOUT ===== */
+.checkout-container {
+  display: flex;
+  max-width: 1300px;
+  margin: auto;
+  gap: 30px;
+  padding: 20px;
+}
+
+.checkout-left {
+  flex: 2;
+}
+
+.checkout-right {
+  flex: 1;
+  position: sticky;
+  top: 20px;
+}
+.checkout-summary-info small {
+  display: block;    
+  margin-top: 2px;    
+  font-size: 15px;
+  color: #555;
+}
+
+/* ===== CARD ===== */
+.checkout-card,
+.checkout-summary-card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.checkout-page h3 {
+  margin-bottom: 15px;
+}
+
+/* ===== INPUT (FIXED PART) ===== */
+.checkout-page input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* 👉 YAHI MAIN FIX HAI */
+.checkout-row {
+  display: flex;
+  gap: 10px;
+}
+
+.checkout-row input {
+  flex: 1;        /* 👈 sab inputs equal width */
+  min-width: 0;  /* 👈 flex bug fix */
+}
+
+/* ===== RADIO ===== */
+.checkout-radio {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* ===== BUTTON ===== */
+.checkout-place-order {
+  width: 100%;
+  padding: 15px;
+  background: #3f5f3b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ===== SUMMARY ===== */
+.checkout-summary-card.beige {
+  background: #f7f4ee;
+  border-radius: 14px;
+}
+
+.checkout-summary-product {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.checkout-summary-product img {
+  width: 70px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.checkout-summary-info {
+  flex: 1;
+}
+
+.checkout-summary-info .title {
+  font-weight: 600;
+}
+
+.checkout-summary-price {
+  font-weight: 600;
+}
+
+.checkout-row-between {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.green {
+  color: green;
+}
+
+.checkout-order-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.checkout-secure {
+  text-align: center;
+  font-size: 13px;
+  margin: 12px 0;
+}
+
+/* ===== FEATURES ===== */
+.checkout-summary-features {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  font-size: 11px;
+}
+
+.checkout-summary-features div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.checkout-summary-features img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .checkout-container {
+    flex-direction: column;
+  }
+
+  .checkout-right {
+    position: static;
+  }
+}
+/* ===== PAYMENT METHOD ===== */
+.pm-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.pm-option.active {
+  background: #f7f4ee;
+  border-color: #caa03a;
+}
+
+.pm-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pm-radio {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #caa03a;
+  border-radius: 50%;
+}
+
+.pm-radio.checked {
+  background: #caa03a;
+}
+
+.pm-title {
+  font-weight: 600;
+}
+
+.pm-icons img {
+  height: 24px;
+  margin-left: 6px;
+}
+
+/* ===== MODAL ===== */
+.pm-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.pm-modal {
+  background: #fff;
+  padding: 22px;
+  border-radius: 14px;
+  width: 380px;
+}
+
+.pm-card-type {
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.pm-card-type.active {
+  border-color: #caa03a;
+  background: #f7f4ee;
+}
+
+.pm-card-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.pm-row {
+  display: flex;
+  gap: 10px;
+}
+
+.pm-modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+.pm-modal-actions .confirm {
+  background: #3f5f3b;
+  color: white;
+}
+.checkout-input {
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  outline: none;
+  gap: 10px;
+}
+
+/* select ko input jaisa look dene ke liye */
+select.checkout-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+ 
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 12px;
+}
+.country-select {
+  max-width: 40%;  
+  margin-bottom: 18px 
+  /* thoda kam width */
+ 
+}
+
+/* FIX: India text color same as other inputs */
+.checkout-page select,
+.checkout-page input[readonly] {
+  color: #555;
+  font-weight: 400;
+}
+
+/* FIX: label aur input ke beech thoda gap */
+.checkout-page label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.checkout-page input,
+.checkout-page select {
+  margin-top: 4px;
+}
+/* Country select ke neeche proper gap */
+.checkout-row {
+  margin-bottom: 15px;
+}
+
+/* Select ke liye thoda height + breathing space */
+.checkout-row select.checkout-input {
+  margin-bottom: 0;
+}

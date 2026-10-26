@@ -1,0 +1,177 @@
+
+/* ===============================
+   FULL PAGE BACKGROUND IMAGE
+   =============================== */
+
+.page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  /* 🔥 BACKGROUND IMAGE SAME AS LOGIN */
+  background-image: url("D:\MERN1\project1\client\src\image\login1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ===============================
+   CENTER CARD
+   =============================== */
+
+.signup-container {
+  width: 420px;
+  padding: 40px 35px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  /* ❌ blur hata diya */
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+
+  border-radius: 18px;
+
+  /* sirf border + shadow */
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 12px 45px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ❌ IMAGE SIDE BAND (JSX SAME) */
+.signup-left {
+  display: none;
+}
+
+
+/* ===============================
+   FORM AREA
+   =============================== */
+
+.signup-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* ===============================
+   TEXT
+   =============================== */
+
+.signup-right h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.signup-right p {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 22px;
+  font-weight: 600;
+  color:black;
+}
+
+
+/* ===============================
+   FORM
+   =============================== */
+
+.signup-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup-right label {
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+}
+
+.signup-right input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.signup-right input:focus {
+  outline: none;
+  border-color: #bba34b;
+  box-shadow: 0 0 6px rgba(187, 163, 75, 0.4);
+}
+
+
+/* ===============================
+   BUTTON
+   =============================== */
+
+.signup-right button {
+  margin-top: 6px;
+  padding: 13px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #bba34b;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signup-right button:hover {
+  background: #a8923e;
+}
+
+
+/* ===============================
+   FOOTER LINK
+   =============================== */
+
+.signup-right form p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: #333;
+   font-weight: 600;
+}
+
+.signup-right form a {
+  color: rgb(173, 52, 167);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.signup-right form a:hover {
+  text-decoration: underline;
+}
+/* PASSWORD INPUT WRAPPER */
+.password-wrapper {
+  position: relative;
+}
+
+/* eye icon input ke andar rahe */
+.password-wrapper input {
+  width: 95%;
+  
+  
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}

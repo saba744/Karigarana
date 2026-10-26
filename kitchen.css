@@ -1,0 +1,180 @@
+
+.kitchen-page {
+  font-family: Arial, sans-serif;
+}
+
+/* BANNER */
+/* ===== BANNER ===== */
+.kitchen-banner {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+}
+
+.kitchen-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* pink overlay */
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(214, 85, 102, 0.85) 0%,
+    rgba(214, 85, 102, 0.85) 35%,
+    rgba(214, 85, 102, 0.2) 55%,
+    rgba(214, 85, 102, 0) 70%
+  );
+
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+/* text */
+.banner-overlay h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+
+/* breadcrumb */
+.breadcrumb {
+  padding: 20px 40px;
+color: #d35400;
+  margin-top: 20px;
+  
+}
+
+/* layout */
+.kitchen-content {
+  display: flex;
+  padding: 0 40px 40px;
+  gap: 30px;
+}
+
+/* filters */
+.filter-box {
+  width: 250px;
+}
+
+.filter-box h3 {
+  margin: 20px 0 10px;
+}
+
+.filter-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filter-box li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #555;
+}
+
+.filter-box li:hover {
+  text-decoration: underline;
+}
+
+/* products */
+.product-section {
+  flex: 1;
+}
+
+.sort-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.product-card img { width: 100%; 
+  height: 180px; 
+  object-fit: cover;
+   border-radius: 8px; }
+
+.product-card h4 {
+  margin: 10px 0 6px;
+}
+
+.product-card p {
+  font-weight: initial;
+}
+
+.product-card span {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 14px;
+  margin-left: 6px;
+}
+/* ===== INFO + FAQ SECTION ===== */
+.kitchen-info-section {
+  max-width: 1200px;
+  margin: 80px auto 0;
+  padding: 40px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.kitchen-info-box h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.kitchen-info-box p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.kitchen-info-box h3 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.show-more {
+  color: #1a73e8;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* FAQ */
+.kitchen-faq-box {
+  margin-top: 50px;
+}
+
+.kitchen-faq-box h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 18px;
+}
+
+.faq-item strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.faq-item p {
+  font-size: 15px;
+  color: #555;
+}

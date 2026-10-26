@@ -1,0 +1,105 @@
+/* ===== CART PAGE STYLING ===== */
+
+
+
+/* ===== PAGE TITLE ===== */
+.cart-page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ===== CART CARD ===== */
+.cart-row {
+  display: flex;
+  flex-direction: column; /* vertical layout */
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  max-width: 400px;
+  max-height: 1000px;
+  
+  margin: 0 auto 32px auto;
+  padding: 22px;
+  border-radius: 12px;
+  background: #fff; /* card background */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ===== IMAGE ===== */
+.cart-row img {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+/* ===== PRODUCT INFO ===== */
+.cart-info {
+  text-align: center;
+}
+
+.cart-info p:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* ===== BUTTONS ===== */
+.cart-actions {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* 👈 gap between buttons */
+  margin-top: 14px;
+}
+
+.remove-btn,
+.buy-btn {
+  width: 120px;
+  height: 38px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  margin: 0; /* remove extra margin */
+}
+
+.remove-btn {
+  background: #c0392b;
+  color: #fff;
+}
+
+.remove-btn:hover {
+  background: #a93226;
+}
+
+.buy-btn {
+  background: #2e7d32;
+  color: #fff;
+}
+
+.buy-btn:hover {
+  background: #1b5e20;
+}
+/* ===== CART ACTIONS BOTTOM ===== */
+.cart-actions-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 30px;   /* 👈 yahan gap control hoga */
+  margin-top: 18px;
+}
+/* ===== CART PAGE FULL BACKGROUND ONLY ===== */
+.cart-wrapper {
+  min-height: 100vh;          /* full screen */
+  background-color: #cdd6c3;  /* page bg */
+  padding: 40px 0;
+}
+
+/* cart content box */
+.cart-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: #1b5e20;
+}

@@ -1,0 +1,94 @@
+/* ====== AUTH CONTAINER ====== */
+.admin-auth-box {
+  max-width: 450px;
+  margin: 90px auto;
+  padding: 28px 26px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ====== HEADING ====== */
+.admin-auth-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ====== INPUTS ====== */
+.admin-auth-box input {
+  width: 420px;
+  max-width: 100%;
+  padding: 11px 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.admin-auth-box input:focus {
+  border-color: #6a3df0;
+}
+
+/* ====== CATCHWORD WRAPPER ====== */
+.catchword-wrapper {
+  position: relative;
+  margin-top: 8px;
+  width: 390px;
+}
+
+.catchword-wrapper input {
+  padding-right: 40px;
+}
+
+/* ====== EYE ICON ====== */
+.catchword-eye {
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* ====== ERROR TEXT ====== */
+.error-text {
+  color: #e53935;
+  font-size: 12px;
+  margin: 4px 0 8px;
+  text-align: left;
+}
+
+/* ====== BUTTON ====== */
+.admin-auth-box button {
+  width: 100%;
+  padding: 11px;
+  margin-top: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #6a3df0;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.admin-auth-box button:hover {
+  background: #5832cc;
+}
+
+/* ====== BOTTOM TEXT ====== */
+.login-link {
+  color: #6a3df0;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.admin-auth-box p {
+  margin-top: 16px;
+  font-size: 15px;
+}

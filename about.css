@@ -1,0 +1,359 @@
+.about-page .about-hero {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+}
+
+.about-page .about-hero img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.about-page .about-text {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-page .about-text h1 {
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.about-page .about-text .line {
+  width: 2px;
+  height: 120px;
+  background: white;
+}
+
+
+
+
+/*second*/
+.craft-legacy {
+  padding-left: 320px;
+  
+  
+}
+
+.craft-legacy h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  
+  
+
+}
+
+.craft-legacy p {
+  font-size: 18px;
+  color: #4a6c7a;
+  margin-bottom: 50px;
+ 
+}
+
+.craft-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 24px;
+  align-items: start;
+ 
+  
+}
+
+.grid-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;  
+ 
+}
+
+.grid-col img,
+.grid-col video {
+  width: 100%;
+ border-radius: 18px;
+  object-fit: cover;
+}
+
+.grid-col.center video {
+  height: 420px;
+ 
+}
+
+
+
+.india-craft {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.craft-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.craft-image img {
+  width: 420px;
+  max-width: 100%;
+}
+
+.craft-content {
+  max-width: 520px;
+}
+
+.craft-content h2 {
+  font-size: 34px;
+  line-height: 1.3;
+  color: #0f3d4c;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.craft-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #5a6c7b;
+  margin-bottom: 16px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .craft-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .craft-content {
+    max-width: 100%;
+  }
+}
+.features-section {
+  padding: 0 20px;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.feature-box {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.feature-box img {
+  width: 38px;
+}
+
+.feature-box p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+}
+ .marquee-section {
+  width: 100%;
+  background: #f6f4ef;
+}
+
+.top-marquee {
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e1d8;
+}
+
+.top-marquee marquee {
+  font-size: 18px;
+  color: #3f5f3f;
+  font-weight: 500;
+}
+
+/* each item */
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 60px;
+  white-space: nowrap;
+}
+
+/* 🌳 TREE IMAGE */
+.marquee-item img {
+ width: 26px;            
+  height: auto;
+  object-fit: contain;
+}
+.newsletter-section {
+  padding: 0 20px;
+}
+
+.newsletter-box {
+  max-width: 1200px;
+  margin: auto;
+  border: 1px dashed #caa12c;
+  border-radius: 18px;
+  padding: 55px 20px;
+  text-align: center;
+}
+
+.newsletter-box h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.newsletter-box p {
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.newsletter-form input {
+  width: 360px;
+  max-width: 100%;
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+}
+
+.newsletter-form button {
+  background: #e1b744;
+  color: #fff;
+  border: none;
+  padding: 15px 36px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background: #b08c22;
+}
+@media (max-width: 768px) {
+  .features-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/*footer*/
+
+
+
+.site-footer {
+  background: #f7f5ef;
+  padding-top: 60px;
+  margin-top: 80px;   /* 👈 YE NAYA ADD KIYA (gap ke liye) */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 60px;
+  padding: 0 40px 40px; /* 👈 LEFT & RIGHT space increase */
+}
+
+
+.logo {
+  font-size: 26px;      /* 👈 size kaafi kam */
+  font-weight: 20;     /* 👈 proper weight */
+  letter-spacing: 1px;
+}
+
+
+.tagline {
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.contact {
+  color: #caa12c;
+  margin-bottom: 8px;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.socials img {
+  width: 20px;     
+  height: 20px;
+  object-fit: contain;
+  opacity: 0.85;
+}
+
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer-links h4 {
+  margin-bottom: 15px;
+}
+
+.footer-links p {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+}

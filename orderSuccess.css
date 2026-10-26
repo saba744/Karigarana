@@ -1,0 +1,85 @@
+/* ===== ORDER SUCCESS PAGE ===== */
+.order-success {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f1e8, #fffdf8); /* soft handmade gradient */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* ===== SUCCESS ICON ===== */
+.order-success h1 {
+  font-size: 40px;
+  color: #2e7d32;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  animation: bounce 1.2s ease;
+}
+
+/* ===== MESSAGE ===== */
+.order-success p {
+  font-size: 18px;
+  color: #444;
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.order-success p b {
+  color: #1b5e20;
+  font-weight: 600;
+}
+
+/* ===== BUTTON ===== */
+.order-success button {
+  margin-top: 30px;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+  transition: all 0.3s ease;
+}
+
+.order-success button:hover {
+  background: linear-gradient(135deg, #388e3c, #2e7d32);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(46, 125, 50, 0.4);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .order-success h1 {
+    font-size: 30px;
+  }
+
+  .order-success p {
+    font-size: 15px;
+  }
+
+  .order-success button {
+    width: 80%;
+    padding: 12px;
+    font-size: 15px;
+  }
+}

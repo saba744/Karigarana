@@ -1,0 +1,263 @@
+
+.craft-page {
+  padding: 40px 80px;
+  font-family: Inter, sans-serif;
+  background:white;
+}
+
+/* HEADER */
+.craft-header {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.craft-title {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+/* LAYOUT */
+.craft-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 50px;
+}
+
+/* SIDEBAR */
+.craft-sidebar h4 {
+  margin: 20px 0 10px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.craft-sidebar p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #555555;
+}
+
+.craft-sidebar p:hover {
+  color: #000;
+}
+
+/* PRICE */
+.price-box {
+  margin-top: 30px;
+}
+
+.price-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 6px;
+  gap: 130px;
+}
+
+.price-box input[type="range"] {
+ width: 100%;
+  cursor: pointer;
+  accent-color: #c89b3c;     
+}
+/* CONTENT */
+.craft-content {
+  position: relative;
+}
+
+/* SORT BAR – TOP RIGHT */
+.sort-bar {
+  position: absolute;
+  top: -48px;
+  left: 180%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.sort-bar select {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* GRID */
+.craft-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+/* CARD */
+.craft-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGE SIZE FIX (IMPORTANT) */
+.craft-img-box {
+  position: relative;
+  height: 260px;  
+  width: 260px;        /* 🔥 peeepultree style */
+  border-radius: 16px;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.craft-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BADGE */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #fff;
+  padding: 4px 10px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* INFO */
+.craft-info {
+  padding-top: 10px;
+}
+
+.craft-info h4 {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.stars {
+  color: #ffb400;
+  font-size: 13px;
+}
+
+.price {
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .craft-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .craft-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sort-bar {
+    position: static;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+
+  .craft-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .craft-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.site-footer {
+  background: #f7f5ef;
+  padding-top: 60px;
+  margin-top: 80px;   /* 👈 YE NAYA ADD KIYA (gap ke liye) */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 60px;
+  padding: 0 40px 40px; /* 👈 LEFT & RIGHT space increase */
+}
+
+
+.logo {
+  font-size: 26px;      /* 👈 size kaafi kam */
+  font-weight: 20;     /* 👈 proper weight */
+  letter-spacing: 1px;
+}
+
+
+.tagline {
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.contact {
+  color: #caa12c;
+  margin-bottom: 8px;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.socials img {
+  width: 20px;     
+  height: 20px;
+  object-fit: contain;
+  opacity: 0.85;
+}
+
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer-links h4 {
+  margin-bottom: 15px;
+}
+
+.footer-links p {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+}

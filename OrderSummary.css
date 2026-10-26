@@ -1,0 +1,213 @@
+
+
+.free {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.free h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+
+.free img {
+  border-radius: 10px;
+  margin: 15px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.free h3 {
+  font-size: 1.15rem; /* pehle 1.4rem tha */
+  font-weight: 400;   /* pehle bold tha, ab normal */
+  margin: 10px 0;
+  color: #444;
+}
+
+.free p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.free h4 {
+  margin: 20px 0 10px;
+  font-size: 1.3rem;   /* pehle 1.2rem tha */
+  font-weight: 600;    /* pehle 500 tha */
+  color: #333;
+}
+
+
+/* Payment Options */
+.free label {
+  display: block;
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.free input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #6a11cb; /* royal purple accent */
+}
+
+/* Buttons */
+.free button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.free button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= ONLINE POPUP ================= */
+.online-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.online-popup {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.online-popup h3 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.online-popup button {
+  margin: 8px 0;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.online-popup button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.online-popup .close-btn {
+  background: #ccc;
+  color: #333;
+  margin-top: 12px;
+}
+
+.online-popup .close-btn:hover {
+  background: #aaa;
+  color: #fff;
+}
+
+/* ================= CARD FORM ================= */
+.card-popup {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f9f9ff;
+  border-radius: 10px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-popup h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.card-popup input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border 0.3s ease;
+}
+
+.card-popup input:focus {
+  border-color: #6a11cb;
+  outline: none;
+  box-shadow: 0 0 6px rgba(106, 17, 203, 0.3);
+}
+.bluk-qty-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 15px auto;   /* 👈 CENTER FIX */
+  width: fit-content;  /* 👈 content ke hisaab se width */
+}
+
+/* + and - circles */
+.bluk-qty-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #6a3df0;
+  background: white;
+  color: #6a3df0;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* qty center circle */
+.bluk-qty-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #6a3df0;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+

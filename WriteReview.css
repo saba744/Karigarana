@@ -1,0 +1,157 @@
+/* ===== PAGE WRAPPER ===== */
+.write-review-page {
+  padding: 50px 20px;
+background: linear-gradient(135deg, #b993d6, #8ca6db);
+
+
+font-family: "Georgia", "Times New Roman", serif;
+}
+
+/* ===== FORM ===== */
+.write-review-page form {
+  max-width: 650px;
+  margin: auto;
+  padding: 50px 35px;
+  min-height: 780px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 2px solid #2c3e50;
+  box-shadow: 0 12px 35px rgba(44, 62, 80, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.write-review-page form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 45px rgba(44, 62, 80, 0.3);
+}
+
+/* ===== HEADING ===== */
+.write-review-page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ===== INPUTS, SELECT, DATE, FILE, TEXTAREA ===== */
+.write-review-page input,
+.write-review-page select,
+.write-review-page textarea {
+  display: block;
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 22px;
+  border: 1px solid #b0b0b0;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Georgia", serif;
+  height: 52px;        /* uniform height for all inputs */
+  line-height: 52px;
+  box-sizing: border-box;
+}
+
+.write-review-page input:focus,
+.write-review-page select:focus,
+.write-review-page textarea:focus {
+  border-color: #8e44ad;
+  box-shadow: 0 0 8px rgba(142, 68, 173, 0.4);
+  background: #ffffff;
+}
+
+/* ===== PLACEHOLDER STYLE ===== */
+.write-review-page input::placeholder,
+.write-review-page textarea::placeholder {
+  font-style: italic;
+  font-size: 15px;
+  color: #7f8c8d;
+  letter-spacing: 0.5px;
+}
+
+/* ===== FILE INPUT ===== */
+.write-review-page input[type="file"] {
+  background: #f4ecf7;
+  padding: 0 16px;               /* horizontal padding only */
+  height: 52px;                  /* same as other inputs */
+  border: 1px dashed #8e44ad;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 22px;
+}
+
+/* ===== FILE SELECTOR BUTTON ===== */
+.write-review-page input[type="file"]::file-selector-button {
+  background: #8e44ad;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;             /* slightly larger button */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-style: italic;
+  margin-right: 12px;
+  height: auto;                  /* let it size naturally */
+  line-height: normal;
+}
+
+
+
+.write-review-page input[type="file"]::file-selector-button:hover {
+  background: #6c3483;
+}
+
+/* ===== DATE INPUT ICON ===== */
+.write-review-page input[type="date"] {
+  padding-right: 14px;
+}
+
+/* ===== TEXTAREA ===== */
+.write-review-page textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 20px;
+}
+
+/* ===== ERROR ===== */
+.write-review-page .date-error {
+  color: #c0392b;
+  font-size: 13px;
+  margin-top: -8px;
+  margin-bottom: 14px;
+  font-style: italic;
+}
+
+/* ===== BUTTON ===== */
+.write-review-page button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 30px;
+  background: linear-gradient(135deg, #2c3e50, #8e44ad);
+  color: #f1c40f;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-style: italic;
+}
+
+.write-review-page button:hover {
+  background: linear-gradient(135deg, #34495e, #6c3483);
+  transform: scale(1.03);
+  color: #ffd700;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 1024px) {
+  .write-review-page form {
+    max-width: 800px;
+  }
+}

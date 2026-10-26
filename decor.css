@@ -1,0 +1,241 @@
+/* PAGE */
+.decor-page {
+  font-family: Arial, sans-serif;
+}
+
+/* 🔴 BANNER */
+.decor-banner {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+}
+
+.decor-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 🔴 PINK OVERLAY (HOME DECOR STYLE) */
+.decor-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(220, 74, 98, 0.85) 0%,
+    rgba(115, 177, 219, 0.85) 35%,
+    rgba(220, 74, 98, 0.4) 55%,
+    rgba(220, 74, 98, 0) 70%
+  );
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.decor-banner-title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+/* BREADCRUMB */
+.decor-breadcrumb {
+  padding: 20px 80px;
+  font-size: 14px;
+  color: #777;
+}
+
+.decor-home {
+  cursor: pointer;
+}
+
+/* TITLE */
+.decor-page-title {
+  text-align: center;
+  margin: 30px 0;
+  letter-spacing: 2px;
+}
+
+/* LAYOUT */
+.decor-content {
+  display: flex;
+  gap: 40px;
+  padding: 0 80px 60px;
+}
+
+/* FILTER */
+.decor-filter {
+  width: 260px;
+}
+
+.decor-filter h3 {
+  margin: 20px 0 10px;
+  font-size: 14px;
+}
+
+.decor-filter ul {
+  list-style: none;
+  padding: 0;
+}
+
+.decor-filter li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #555;
+}
+
+.decor-filter li:hover {
+  text-decoration: underline;
+}
+
+.decor-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+/* PRODUCTS */
+.decor-products {
+  flex: 1;
+}
+
+.decor-sort {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.decor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.decor-card img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.decor-card h4 {
+  margin: 10px 0 6px;
+  font-size: 14px;
+}
+
+.decor-card p {
+  font-weight: bold;
+}
+
+.decor-card span {
+  margin-left: 6px;
+  font-size: 13px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .decor-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .decor-content {
+    flex-direction: column;
+  }
+
+  .decor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .decor-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.decor-info-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* INFO BOX */
+.decor-info-box {
+  border: 1px solid #110f0f;
+  border-radius: 10px;
+  padding: 30px 35px;
+  background: #fff;
+}
+
+.decor-info-box h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.decor-info-box p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.decor-info-box h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.decor-show-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #2f5acf;
+  cursor: pointer;
+}
+
+/* FAQ BOX */
+.decor-faq-box {
+  border: 1px solid #201d1d;
+  border-radius: 10px;
+  padding: 30px 35px;
+  background: #fff;
+}
+
+.decor-faq-box h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.decor-faq-item {
+  margin-bottom: 18px;
+}
+
+.decor-faq-item strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.decor-faq-item p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .decor-info-box,
+  .decor-faq-box {
+    padding: 20px;
+  }
+
+  .decor-info-box h2 {
+    font-size: 22px;
+  }
+}
